@@ -187,7 +187,7 @@ export class LiveScoreComponent implements OnInit {
       data: [this.Fovers50, this.Fovers40, this.Fovers30, this.Fovers20, this.Fovers10]
      }, { 
       name: this.team3,
-      data: []
+      data: [this.Sovers50, this.Sovers40, this.Sovers30, this.Sovers20, this.Sovers10]
      }]
      }
       
