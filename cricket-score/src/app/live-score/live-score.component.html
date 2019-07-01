@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="height: 370px; width: 100%;">
+        <h3>ICC World Cup 2019</h3>
+        <div class="card-body">
+          <div class="row">
+              {{team1}} vs {{team3}}
+          </div>
+          <div class ="row">
+            Toss: {{stats}}
+          </div>
+          <div class ="row">
+              <h5>Score : {{description}}</h5>
+            </div>
+       
+        <div class ="row">
+            Overs: {{overs}}
+          </div>
+        <div class ="row">
+            Batting: {{batsman1}} {{batsman2}}
+          </div>
+          <div class ="row">
+              {{baller}}
+            </div>
+          <div class ="row">
+              RunRate: {{runRate | number}}
+            </div>
+            <div class ="row">
+                Predicted Score: {{predictedScore}}
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+            <!-- <div id="chartContainer" [options] = "chartOptions" type = "chart" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div> -->
+            <chart [options] = "chartOptions" style="display: block" type = "chart"> </chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
