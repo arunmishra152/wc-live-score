@@ -4,7 +4,7 @@ const port = process.env.PORT || 3004
 const axios = require('axios');
 
 app.get('/cricket',async (req,res)=>{
-    data= await axios.get('http://cricscore-api.appspot.com/csa?id=1144521');
+    data= await axios.get('http://cricscore-api.appspot.com/csa?id=1144523');
     //console.log(data.data)
     res.json(data.data)
 })
